@@ -18,6 +18,7 @@ def create_assignment(assignment: AssignmentCreate, db: Session = Depends(get_db
     db.refresh(db_assignment)
     return db_assignment
 
+
 @router.get("/assignments", response_model=list[AssignmentOut])
 def list_assignments(db: Session = Depends(get_db)):
     return db.query(Assignment).all()
