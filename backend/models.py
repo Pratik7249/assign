@@ -12,7 +12,7 @@ class User(Base):
     name = Column(String, nullable=False)
     email = Column(String, unique=True, nullable=False)
     password = Column(String, nullable=False)
-    role = Column(String, nullable=False)  # "student" or "teacher"
+    role = Column(String, nullable=False)  
 
     assignments = relationship("Assignment", back_populates="teacher")
     submissions = relationship("Submission", back_populates="student")

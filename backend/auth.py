@@ -6,7 +6,6 @@ from database import SessionLocal
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
-# Dummy token system: just return user ID as token
 def get_db():
     db = SessionLocal()
     try:

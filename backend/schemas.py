@@ -10,7 +10,7 @@ class UserBase(BaseModel):
     name: str
     email: str
     password: str
-    role: str  # "student" or "teacher"
+    role: str  
 
 class UserOut(BaseModel):
     id: int
