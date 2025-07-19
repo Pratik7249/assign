@@ -144,3 +144,25 @@ Core APIs	POST /assignments, POST /submit, GET /submissions/:id
 Auth	JWT-based, role-specific access
 Future Scaling	Cloud deployment, DB indexing, caching, microservices ready
 ```
+
+# Part B – Prototype Implementation:
+
+### How to run frontend? 
+``` 
+cd frontend
+npm install
+npm start
+```
+
+### How to run backend?
+```
+cd backend
+pip install fastapi uvicorn sqlalchemy pydantic
+uvicorn main:app --reload
+```
+
+### How to see Swagger UI?
+ Go to your browser and open:
+```
+http://localhost:8000/docs
+```
